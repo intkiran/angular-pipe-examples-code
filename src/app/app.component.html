@@ -1,5 +1,28 @@
-<div>
+<!--<div>
   {{employees |json}}
 </div>
 
-<pre><div>{{employees | json}}</div></pre>
+<pre><div>{{employees | json}}</div></pre> -->
+
+<table style="width:100%">
+  <tr>
+    <th>name</th>
+    <th>index</th>
+    <th>Count</th>
+    <th>First</th>
+    <th>Last</th>
+    <th>Odd</th>
+    <th>Even</th>
+  </tr>
+  <tr
+    *ngFor="let employee of employees; let i=index;let count=count;let first=first;let last=last;let even=even;let odd=odd;"
+  >
+    <td>{{employee.name}}</td>
+    <td>{{i}}</td>
+    <td>{{count}}</td>
+    <td>{{first}}</td>
+    <td>{{last}}</td>
+    <td>{{even}}</td>
+    <td>{{odd}}</td>
+  </tr>
+</table>
