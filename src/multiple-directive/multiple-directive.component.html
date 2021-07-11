@@ -1,0 +1,19 @@
+<!--
+  multiple directives together in a single element are not supported
+
+  <h3>Mulitple Directives in Same Elements</h3>
+<button (click)="showTable()">Display Table!</button>
+
+<div *ngIf="hide" *ngFor="let employee of employees;">
+  <span>{{employee.name}}</span>
+</div>
+-->
+
+<h3>Multiple Directives in Same Elements</h3>
+<button (click)="showTable()">Display Table!</button>
+
+<div *ngIf="hide">
+  <div *ngFor="let employee of employees;">
+    <span>{{employee.name}}</span>
+  </div>
+</div>

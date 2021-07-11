@@ -8,6 +8,7 @@ import {
 
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
+import { MultipleDirectiveComponent } from '../multiple-directive/multiple-directive.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { CommonModule } from '@angular/common';
     NoopAnimationsModule,
     BrowserAnimationsModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, MultipleDirectiveComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
