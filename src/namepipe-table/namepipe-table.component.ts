@@ -1,22 +1,17 @@
-import { Component } from '@angular/core';
-import { Employee } from './employee';
-import { Child, Parent } from './parent';
+import { Component, OnInit } from '@angular/core';
+import { Employee } from '../app/employee';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-namepipe-table',
+  templateUrl: './namepipe-table.component.html',
+  styleUrls: ['./namepipe-table.component.css']
 })
-export class AppComponent {
-  /* a = { name: 'Groucho', sibling: '' };
-  b = { name: 'Harpo', sibling: this.a };
-  parent: Parent;
-  child: Child;
-  */
+export class NamepipeTableComponent implements OnInit {
+  constructor() {}
   employees: Employee[] = [
     {
       id: 1,
-      name: 'Ram',
+      name: 'John',
       salutation: 'Mr',
       firstName: 'fram',
       middleName: 'mram',
@@ -51,10 +46,5 @@ export class AppComponent {
       salary: 8000
     }
   ];
-  constructor() {
-    /* this.child = { name: 'ram', parent: this.parent };
-    this.parent = { id: 1, child: this.child };*/
-  }
-
   ngOnInit() {}
 }
