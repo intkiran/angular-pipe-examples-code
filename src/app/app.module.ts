@@ -9,6 +9,7 @@ import {
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { MultipleDirectiveComponent } from '../multiple-directive/multiple-directive.component';
+import { NamePipe } from '../name.pipe';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { MultipleDirectiveComponent } from '../multiple-directive/multiple-direc
     NoopAnimationsModule,
     BrowserAnimationsModule
   ],
-  declarations: [AppComponent, MultipleDirectiveComponent],
+  declarations: [AppComponent, MultipleDirectiveComponent, NamePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

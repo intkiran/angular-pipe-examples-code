@@ -1,0 +1,20 @@
+<p>
+  Angular pipe with multiple attributes example
+</p>
+<table style="width:100%">
+  <tr>
+    <th>id</th>
+    <th>fullname</th>
+    <th>salary</th>
+
+  </tr>
+  <tr
+    *ngFor="let employee of employees; "
+  >
+    <td>{{employee.id}}</td>
+    <td>
+      {{employee.salutation|name:employee.firstName:employee.middleName:employee.lastName}}
+    </td>
+    <td>{{employee.salary}}</td>
+  </tr>
+</table>

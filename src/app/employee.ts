@@ -1,9 +1,9 @@
-export class Employee {
+export interface Employee {
   id: Number;
-  name: String;
-  salutation: String;
-  firstName: String;
-  middleName: String;
-  lastName: String;
+  name: string;
+  salutation: string;
+  firstName: string;
+  middleName: string;
+  lastName: string;
   salary: Number;
 }
